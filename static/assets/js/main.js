@@ -256,3 +256,19 @@
 		}
 
 })(jQuery);
+
+
+function checkOrientation() {
+  const isDeviceLandscape = window.innerWidth > window.innerHeight;
+  const link = document.getElementById("blackjack-link");
+
+  if (isDeviceLandscape) {
+    link.style.display = "inline";
+  } else {
+    link.style.display = "none";
+  }
+}
+
+window.addEventListener("DOMContentLoaded", checkOrientation);
+
+window.addEventListener("resize", checkOrientation);

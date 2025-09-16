@@ -4691,3 +4691,46 @@ input, select, textarea {
 		}
 
 	}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table.alt {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table.alt th, table.alt td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+table.alt thead {
+  background: #fff;
+  color: #fff;
+}
+
+table.alt tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table.alt tbody tr:hover {
+  background: #f1f7ff;
+  transition: 0.3s;
+}
+
+table.alt a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+table.alt a:hover {
+  color: #0055aa;
+  text-decoration: underline;
+}
