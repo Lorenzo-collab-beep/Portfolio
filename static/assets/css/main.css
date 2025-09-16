@@ -4692,10 +4692,8 @@ input, select, textarea {
 
 	}
 
-
 .table-wrapper {
-  width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 table.alt {
@@ -4735,4 +4733,11 @@ table.alt a {
 table.alt a:hover {
   color: #0055aa;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  table.alt th:first-child,
+  table.alt td:first-child {
+    display: none;
+  }
 }
